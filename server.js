@@ -1,12 +1,15 @@
+// packages needed to run program
 const inquirer = require('inquirer');
 const fs = require('fs');
+const path = require('path');
+const generateMarkdown = require('./utils/generateMarkdown')
 
-inquirer
-.prompt([
+// inquirer package with questions to run program
+const questions = [
     {
         type: 'input',
-        name: 'username',
-        message: 'What is the title of your project.',
+        name: 'title',
+        message: 'What is the title of your project?',
     }, {
         type:'input',
         name: 'description',
@@ -25,8 +28,8 @@ inquirer
         message: 'How is the app being used?'
     }, {
         type: 'checkbox',
-        name: 'liscense',
-        message: 'What liscense is being used?',
+        name: 'license',
+        message: 'What license is being used?',
         choices: ['MIT', 'Apache', 'GNU', 'Eclipse']
     }, {
         type: 'input',
@@ -35,15 +38,22 @@ inquirer
     }, {
         type: 'input',
         name: 'tests',
-        message: 'Do you have any tests?'
+        message: 'Do you have any test instructions?'
     }, {
         type:'input',
-        name: 'questions',
-        message: 'Do you have any questions?'
+        name: 'username',
+        message: 'What is your Github username?'
     }
-])
-.then(function(data) {
-    console.log(data)
+]
+function writetoFile(fileName, data) {
+    return fs.writeFileSync(path.join(process.cwd(), fileName), data);
+}
 
-})
+function init() {
+    inquirer.prompt(questions).then((responses) => {
+        console.log('creating readme');
+        writetoFile('./utils/generateMarkdown.js', generateMarkdown({responses}))
+    })
+}
 
+init()
