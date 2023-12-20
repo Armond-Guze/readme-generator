@@ -16,7 +16,7 @@ const questions = [
         message: 'What is the project about?'
     }, {
         type: 'input',
-        name: 'table of contents',
+        name: 'tableOfContents',
         message: 'Table of contents.'
     }, {
         type: 'input',
@@ -51,8 +51,8 @@ function writetoFile(fileName, data) {
 
 function init() {
     inquirer.prompt(questions).then((responses) => {
-        console.log('creating readme');
-        writetoFile('./utils/generateMarkdown.js', generateMarkdown({responses}))
+        console.log('Creating README.MD file...');
+        writetoFile('./utils/generateMarkdown', generateMarkdown({responses}))
     })
 }
 
