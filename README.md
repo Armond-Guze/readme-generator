@@ -1,6 +1,6 @@
 
-    # readme
-    [GitHub Repository](https://github.com/armond-guze/)
+    # Readme Generator
+    https://github.com/armond-guze/
     
     ## creating readmes
     
@@ -24,6 +24,5 @@
     ## Tests
     install node
     
-    ## Questions
-    Contact: [armond-guze](https://github.com/armond-guze)
-        
+    ## armond-guze
+    
