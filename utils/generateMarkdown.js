@@ -1,28 +1,34 @@
 function generateMarkdown(data) {
-    const generateReadme = `
+  const generateReadme = `
     # ${data.title}
-    https://github.com/${data.username}/
+    [GitHub Repository](https://github.com/${data.username}/)
     
     ## ${data.description}
-    # Table Of Contets
-    # [installation](#installation)
-    # [usage](#usage)
-    # [license](#license)
-    # [contributing](#contributing)
-    # [tests](#tests)
-    # [questions](#questions)
-    ## ${data.usage}
     
-    ## ${data.license.join(', ')}
+    ## Table Of Contents
+    - [Installation](#installation)
+    - [Usage](#usage)
+    - [License](#license)
+    - [Contributing](#contributing)
+    - [Tests](#tests)
+    - [Questions](#questions)
     
-    ## ${data.contributing}
+    ## Usage
+    ${data.usage}
     
-    ## ${data.tests}
+    ## License
+    ${data.license.join(", ")}
     
-    ## ${data.username}
-    `
-
-    return generateReadme
+    ## Contributing
+    ${data.contributing}
+    
+    ## Tests
+    ${data.tests}
+    
+    ## Questions
+    Contact: [${data.username}](https://github.com/${data.username})
+    `;
+  return generateReadme;
 }
 
 module.exports = generateMarkdown;

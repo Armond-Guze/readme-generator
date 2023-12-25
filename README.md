@@ -1,22 +1,29 @@
 
-    # Readme Generator
-    https://github.com/armond-guze/
+    # readme
+    [GitHub Repository](https://github.com/armond-guze/)
     
     ## creating readmes
-    # Table Of Contets
-    # [installation](#installation)
-    # [usage](#usage)
-    # [license](#license)
-    # [contributing](#contributing)
-    # [tests](#tests)
-    # [questions](#questions)
-    ## to create readmes
     
-    ## 
+    ## Table Of Contents
+    - [Installation](#installation)
+    - [Usage](#usage)
+    - [License](#license)
+    - [Contributing](#contributing)
+    - [Tests](#tests)
+    - [Questions](#questions)
     
-    ## armond guze
+    ## Usage
+    creating readmes
     
-    ## no
+    ## License
     
-    ## armond-guze
     
+    ## Contributing
+    armond guze
+    
+    ## Tests
+    install node
+    
+    ## Questions
+    Contact: [armond-guze](https://github.com/armond-guze)
+        
