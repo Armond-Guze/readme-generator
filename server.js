@@ -46,13 +46,14 @@ const questions = [
     }
 ]
 function writetoFile(fileName, data) {
-    return fs.writeFileSync(path.join(process.cwd(), fileName), data);
+    return fs.writeFileSync(path.join(process.cwd(), fileName + '.md'), data);
 }
 
 function init() {
     inquirer.prompt(questions).then((responses) => {
         console.log('Creating README.MD file...');
-        writetoFile('./utils/generateMarkdown', generateMarkdown({responses}))
+        console.log(responses)
+        writetoFile('README', generateMarkdown(responses))
     })
 }
 
