@@ -1,8 +1,10 @@
-# ReadMe Generator
+# Readme Generator
 
-[GitHub Repository](https://github.com/armond-guze/)
+[GitHub Repository](https://github.com/Armond-Guze/)
 
-## creating readmes
+## Description
+
+Creating a Readme file more effectively using node.js and the inquirer package.
 
 ## Table Of Contents
 
@@ -15,18 +17,20 @@
 
 ## Usage
 
-to create a read me
+The app is being used by accepting your input and placing it into a ReadMe template.
 
 ## License
 
+MIT
+
 ## Contributing
 
-armond guze
+Armond Guze
 
 ## Tests
 
-no
+N/A
 
 ## Questions
 
-Contact: [armond-guze](https://github.com/armond-guze)
+Contact: [Armond-Guze](https://github.com/Armond-Guze)

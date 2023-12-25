@@ -3,7 +3,8 @@ function generateMarkdown(data) {
    # ${data.title}
 [GitHub Repository](https://github.com/${data.username}/)
 
-## ${data.description}
+## Description
+${data.description}
 
 ## Table Of Contents
 - [Installation](#installation)
